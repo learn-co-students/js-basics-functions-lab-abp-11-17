@@ -4,9 +4,13 @@ function distanceFromHqInBlocks(pickupLocation) {
   return distance;
 }
 
-function distanceFromHqInFeet() {
+function calculateVertical(start, destination) {
+  return Math.abs(destination - start) * 264;
+}
 
-
+function distanceFromHqInFeet(pickupLocation) {
+  var distance1 = Math.abs(pickupLocation - 42) * 264;
+  return distance1;
 }
 
 function distanceTravelledInFeet() {
