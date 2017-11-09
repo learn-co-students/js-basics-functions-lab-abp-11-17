@@ -6,7 +6,7 @@
 2. Practice basics of control flow and `return` statements
 
 ## Introduction
-Scuber has gained some traction among mom's and dad's in New York City. It also has received a few requests.
+Scuber has gained some traction among moms and dads in New York City. It also has received a few requests.
 
 First, Scuber's CTO wants to ensure that its headquarters is near its customers. It asks you to write a function that takes in a pickup location for a passenger, and returns the number of blocks from it's headquarters on 42nd street. This can be used for another function that translates the number of blocks from headquarters to the distance in feet.
 
