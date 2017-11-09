@@ -16,10 +16,20 @@ function distanceFromHqInFeet(location) {
 }
 
 function distanceTravelledInFeet(start, end) {
-  if (start < end) {
-    return (end - start) * 264;
+  let distance;
+(end - start>0) ? distance=end-start : distance=start-end;
+    return distance * 264;
+  }
+
+function calculatesFarePrice(start, end) {
+  let cost=distanceTravelledInFeet(start, end);
+  if (cost<400) {
+    return 0;
+  } else if (cost>400 && cost<2000) {
+    return cost * 0.02;
+  } else if (cost>2000 && cost<2500) {
+    return 25;
   } else {
-  if (start > end) {
-    return (start - end) * 264
+    return 'cannot travel that far';
   }
 }
