@@ -11,7 +11,7 @@ describe('index.js', function() {
     it('calculates distances below 42nd street', function() {
       expect(distanceFromHqInBlocks(34)).to.equal(8);
     });
-  });
+    });
 
   describe('distanceFromHqInFeet()', function() {
     it('returns a distance in feet', function() {
